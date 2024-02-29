@@ -7,7 +7,7 @@ const froyoFlavors = userInput.split(",");
 // track flavors
 const observedFlovors = {};
 
-// observedFlavors object
+// read of the flovors that have been counted
 froyoFlavors.forEach(flavor => {
     if (observedFlovors[flavor]){
         observedFlovors[flavor] += 1; // Incremet count if flavor has benn observerd
@@ -28,3 +28,4 @@ console.log("------------------------");
 for (let flavor in observedFlovors) {
     console.log(`${flavor}\t\t${observedFlovors[flavor]}`);
 }
+;
